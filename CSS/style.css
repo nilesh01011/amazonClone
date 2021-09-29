@@ -2340,6 +2340,7 @@ main .five_products .five_six .five_six_footer a:hover {
 }
 
 #SignOutUser {
+  width: fit-content;
   justify-content: center;
   cursor: pointer;
 }
