@@ -706,10 +706,6 @@
     grid-template-rows: auto;
   }
 
-  #SignOutUser {
-    width: 70%;
-  }
-
   #home .container_wrapper.home {
     grid-template-rows: 290px auto;
   }
