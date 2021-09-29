@@ -64,7 +64,7 @@ function Empty_Cart() {
   }
   if (UserFind == null) {
     buyBtn.addEventListener('click', () => {
-      window.location = './SignPage.html';
+      window.location = './CreateSignPage.html';
     });
   } else {
     buyBtn.addEventListener('click', () => {
