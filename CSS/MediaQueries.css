@@ -71,9 +71,6 @@
     font-size: 15px;
     width: 270px;
   }
-  .inspireAmazon button {
-    width: 270px;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
