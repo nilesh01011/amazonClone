@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#131921" />
+    <meta name="author" content="Nilesh_Rathod">
+    <meta name="description" content="AmazonClone for practice purpose to create a E-commerce websites">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logoimg2.png" type="image/png">
+    <title>AmazonClone.com. Spend less. Smile more.</title>
+    <!-- ===========Style Links============ -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/MediaQueries.css">
+
+    <!-- =======Font Awesome Links====== -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<div class="container">
+
+    <header>
+        <div onclick="backToHome()" id="nav_brand" class="nav_brand">
+            <img src="./images/amazon_logo.png" width="100px" height="40px" alt="Amazon-logo">
+        </div>
+        <!-- ============nav-logo end========= -->
+        <div class="location_section">
+            <div class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div id="located" class="located">
+                <span>Deliver to</span>
+                <span>India</span>
+            </div>
+        </div>
+        <!-- =======Location-section end======= -->
+        <div class="input_content">
+            <select id="products_list">
+                <option value="All">All</option>
+                <option value="All Departments">All Departments</option>
+                <option value="Art & Crafts">Art & Crafts</option>
+                <option value="Books">Books</option>
+                <option value="Computers">Computers</option>
+                <option value="Deals">Deals</option>
+                <option value="Digital Music">Digital Music</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Kindle Store">Kindle Store</option>
+                <option value="Prime Video">Prime Video</option>
+                <option value="Women's Fashion">Women's Fashion</option>
+                <option value="Men's Fashion">Men's Fashion</option>
+                <option value="Girls Fashion">Girls Fashion</option>
+                <option value="Boys Fashion">Boys Fashion</option>
+                <option value="Health & Household">Health & Household</option>
+                <option value="Home & Kitchen">Home & Kitchen</option>
+                <option value="Industrial & Scientifi">Industrial & Scientifi</option>
+                <option value="Luggage">Luggage</option>
+                <option value="Movies & TV">Movies & TV</option>
+                <option value="Music, CDs & Viny">Music, CDs & Viny</option>
+                <option value="Pet Supplies">Pet Supplies</option>
+                <option value="Sports & Outdoors">Sports & Outdoors</option>
+                <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+                <option value="Toys & Games">Toys & Games</option>
+                <option value="Video Games">Video Games</option>
+            </select>
+            <!-- products lists end -->
+            <input type="text" id="input_fill" placeholder="Search Amazon">
+            <!-- user-input-end -->
+            <div class="search_icons">
+                <button type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <!-- ========Input Section End========= -->
+        <div id="hello_sign" onmouseover="ShowSignWithOverlay()" onmouseleave="HideSignWithOverlay(), mouseLeave()"
+            onmouseenter="mouseOver()">
+            <span id="UserName">
+                Hello, Sign in
+            </span>
+            <span>
+                Account & Lists
+                <i class="fas fa-caret-down"></i>
+            </span>
+            <!-- ============================================== -->
+            <!-- ==================Hello_Sign================== -->
+            <div id="sign_lists" onmouseleave="mouseLeave()">
+                <div class="arrow_up">
+                    <i class="fas fa-caret-up"></i>
+                </div>
+
+                <div class="cart_content">
+                    <a href="./CreateSignPage.html" class="btn">Sign in</a>
+                    <div class="next_line">
+                        <span>New customer?</span>
+                        <a href="./CreateSignPage.html">Start here.</a>
+                    </div>
+                    <div class="cart_row">
+                        <div class="left_cols"></div>
+                        <div class="right_cols"></div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="cart_bottom_content">
+                    <div class="cart_left_content">
+                        <h2>Your Lists</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Create a List</a>
+                            </li>
+                            <li>
+                                <a href="#">Find a List or Registry</a>
+                            </li>
+                            <li>
+                                <a href="#">AmazonSmile Charity Lists</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="span"></span>
+                    <div class="cart_right_content">
+                        <h2>Your Account</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Accounts</a>
+                            </li>
+                            <li>
+                                <a href="#">Orders</a>
+                            </li>
+                            <li>
+                                <a href="#">Recommendations</a>
+                            </li>
+                            <li>
+                                <a href="#">Browsing History</a>
+                            </li>
+                            <li>
+                                <a href="#">Watchlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Video Purchases & Rentals</a>
+                            </li>
+                            <li><a href="#">Kindle Unlimited</a></li>
+                            <li><a href="#">Content & Devices</a></li>
+                            <li><a href="#">Subscribe & Save Items</a></li>
+                            <li><a href="#">Memberships & Subscriptions</a></li>
+                            <li><a href="#">Music Library</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- =================End Section================== -->
+        </div>
+        <!-- =========hello sign end=========== -->
+        <div class="returns_orders">
+            <span>
+                Returns
+            </span>
+            <span>& Orders</span>
+        </div>
+        <!-- ======== returns order ends ======= -->
+        <div id="cart">
+            <div class="Count_logo">
+                <span>0</span>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <span class="cart">Cart</span>
+        </div>
+        <!-- ===========Cart Section end=========== -->
+
+        <div id="sidebar" class="sidebarBtn">
+            <div class="sidebar_span">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="spanmenu"> All </div>
+        </div>
+
+        <div class="nav_lists">
+            <span>Best Seller</span>
+            <span>Mobile</span>
+            <span>Gift Cards</span>
+            <span>Amazon Pay</span>
+            <span>Fashion</span>
+            <span>Electronics</span>
+            <span class="hide_in_medium">Customer Service</span>
+            <span class="hide_in_large">New Releases</span>
+        </div>
+
+        <div class="AmazonRespons">
+            <span>Amazon's response to COVID-19</span>
+        </div>
+
+        <div id="carousel_lists">
+            <div class="wrapper">
+                <div class="items">Best Sellers</div>
+                <div class="items">Video</div>
+                <div class="items">New Releases</div>
+                <div class="items">Home</div>
+                <div class="items">Livestreams</div>
+                <div class="items">Pharmacy</div>
+                <div class="items">Books</div>
+                <div class="items">Gift Cards</div>
+                <div class="items">PC</div>
+                <div class="items">Deals</div>
+                <div class="items">Music</div>
+                <div class="items">Lists</div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- class="container_section" -->
+    <div id="cart_page">
+        <div id="cart_container" class="container_wrapper cart">
+            <div class="left_cart_section">
+                <div class="heading_section">
+                    <div onclick="backToHome()" id="backToHome">
+                        <a href="#">
+                            <i class="fas fa-chevron-left"></i> Back to page
+                        </a>
+                    </div>
+                    <div class="heading">
+                        <h1>Shopping Cart <span>Price</span></h1>
+                    </div>
+                </div>
+                <div class="cart_section">
+                    <div class="empty_cart_image">
+                        <div class="image">
+                            <img src="./images/empty_cart.jpg" alt="empty_cart_images" />
+                        </div>
+                        <div class="right_side_cart">
+                            <h2>
+                                Your AmazonClone Cart is empty <br>
+                                <a onclick="BackToHome()" href="#">Shop to Add in cart</a>
+                            </h2>
+                            <div class="btn">
+                                <button onclick="BackToHome()" type="button">Continue shopping</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right_cart_section">
+                <div class="top_part">
+                    <img src="./images/cartPurchasedAssu.png" alt="cartPurchasedAssu-images">
+                </div>
+                <div id="bottom_part" class="bootom_part">
+                    <div class="prices_part">
+                        <h4>Subtotal
+                            <span id="items">
+                                (0 items):
+                            </span>
+                            <span id="items_prices">
+                                &#8377;0
+                            </span>
+                        </h4>
+                        <div class="order_secured">
+                            <i class="fas fa-check-circle"></i>
+                            <p>
+                                <span>Your order is eligible for FREE Delivery.</span> <br>
+                                <span>Select this option at checkout. <a href="#">Details</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <button onclick="PurchaseLocation()" class="buyBtn" disabled="disabled" type="button">
+                        Proceed to Buy
+                    </button>
+
+                    <div class="collapse">
+                        <button type="button" class="collapsible">EMI Available
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="content">
+                            <p>Your order qualifies for EMI with valid credit cards (not available on purchase of
+                                Gold,
+                                Jewelry, Gift cards and Amazon pay balance top up).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- ==================Pages Section End================== -->
+    <div class="inspireAmazon">
+        <h2>Inspired by your browsing history</h2>
+        <button>
+            <a href="./CreateSignPage.html">Sign in to see personalized recommendations</a>
+        </button>
+    </div>
+
+    <footer>
+        <div class="back_to_top">
+            <a href="#" id="mobile_site">
+                <span> <i class="fas fa-caret-up"></i> </span>
+                Back to top
+            </a>
+        </div>
+        <div class="footer_content">
+            <div class="desktop_view">
+                <ul>
+                    <li>
+                        <h3>Get to Know Us</h3>
+                        <a href="#">Careers</a>
+                        <a href="#">Blog</a>
+                        <a href="#">About Amazon</a>
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Amazon Devices</a>
+                    </li>
+                    <li>
+                        <h3>Make Money with Us</h3>
+                        <a href="#">Sell products on Amazon</a>
+                        <a href="#">Sell on Amazon Bussiness</a>
+                        <a href="#">Sell apps on Amazon</a>
+                        <a href="#">Become an Affiliate</a>
+                        <a href="#">Advertise Your Products</a>
+                        <a href="#">Self-Publish with Us</a>
+                        <a href="#">Host an Amazon Hub</a>
+                        <a href="#"> <i class="fas fa-angle-right"></i> See More Make Money <br>
+                            with Us</a>
+                    </li>
+                    <li>
+                        <h3>Amazon Payment Products</h3>
+                        <a href="#">Amazon Bussiness Card</a>
+                        <a href="#">Shop with Points</a>
+                        <a href="#">Reload Your Balance</a>
+                        <a href="#">Amazon Currency Converter</a>
+                    </li>
+                    <li>
+                        <h3>Let Us Help You</h3>
+                        <a href="#">Amazon and COVID-
+                            <br> 19</a>
+                        <a href="#">Your Account</a>
+                        <a href="#">Your Orders</a>
+                        <a href="#">Shipping Rates & <br> Policies</a>
+                        <a href="#">Returns & <br> Replacements</a>
+                        <a href="#">Manage Your <br> Content and Devices</a>
+                        <a href="#">Amazon Assistant</a>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+                <div class="footerLine"></div>
+
+                <div class="navfooter">
+                    <span id="footer_logo">
+                        <div class="footer_logo">
+                            <img src="./images/amazon_logo.png" alt="footer_logo">
+                        </div>
+                    </span>
+                    <div id="icon_desktop">
+                        <div class="nav_footer">
+                            <span class="languages">
+                                <i class="fas fa-globe"></i> English
+                            </span>
+                            <span>
+                                <b style="color:#fff; margin-right:5px;">&#8377;</b> INR - Indian Rupee
+                            </span>
+                            <span class="flags">
+                                <img src="./images/india_flag.jpg" alt="india_flag"> India
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_view">
+                <div class="content_footer">
+                    <div class="left_footer">
+                        <ul>
+                            <li><a href="#">AmazonClone.com</a></li>
+                            <li><a href="#">Your Lists</a></li>
+                            <li><a href="#">Find a Gift</a></li>
+                            <li><a href="#">Browsing History</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="right_footer">
+                        <ul>
+                            <li><a href="#">Your Orders</a></li>
+                            <li><a href="#">Gift Cards & Registry</a></li>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Sell products on <br> Amazon</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_footer">
+            <div class="mobile_view_main_nav_footer">
+                <div class="content">
+                    <div>
+                        <span class="languages">
+                            <i class="fas fa-globe"></i>
+                            English
+                        </span>
+                        <span>
+                            <b style="color:#fff; margin-right:5px;">&#8377;</b> INR - Indian Rupee
+                        </span>
+                    </div>
+                    <div>
+                        <span class="flags">
+                            <img src="./images/india_flag.jpg" alt="india_flag"> India
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <h3 id="ChangeFooterContent"></h3>
+            <div class="bottom_footer">
+                <div>
+                    <span>Conditions of Use</span>
+                    <span>Privacy Notice</span>
+                    <span>Interest-Based Ads</span>
+                </div>
+                <div>
+                    <span>&copy; 2021, AmazonClone.com, Inc. or its affiliates</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ========================sidebars-section====================== -->
+<div id="sidebars_left">
+    <div id="sideBars_nav">
+        <div class="close_sidebar">
+            &times;
+        </div>
+        <div class="sidebar_contents">
+            <div class="sidebar_header">
+                <i class="fas fa-user-circle"></i>
+                <h1 id="SideBarUser"></h1>
+            </div>
+
+            <div class="sidebar_main_content">
+
+                <div class="shop_department">
+                    <h2>Shop By Department</h2>
+                    <ul>
+                        <li>Electronics <i class="fas fa-chevron-right"></i></li>
+                        <li>Computers <i class="fas fa-chevron-right"></i></li>
+                        <li>Smart Home <i class="fas fa-chevron-right"></i></li>
+                        <li>Arts & Crafts <i class="fas fa-chevron-right"></i></li>
+                    </ul>
+                </div>
+                <!-- ============shop_department End=========== -->
+
+                <hr class="hr">
+
+                <div class="programs_features">
+                    <h2>Programs & Features</h2>
+                    <ul>
+                        <li>Gift Cards <i class="fas fa-chevron-right"></i></li>
+                        <li>#FounditOnAmazon <i class="fas fa-chevron-right"></i></li>
+                        <li>Amazon Live <i class="fas fa-chevron-right"></i></li>
+                        <li>International Shopping <i class="fas fa-chevron-right"></i></li>
+                    </ul>
+                </div>
+
+                <hr class="hr">
+
+                <!-- ============programs_features End=========== -->
+
+                <div class="digital_content">
+                    <h2>Digital Content & Devices</h2>
+                    <ul>
+                        <li>Amazon Music <i class="fas fa-chevron-right"></i></li>
+                        <li>Kindle E-readers & Books <i class="fas fa-chevron-right"></i></li>
+                        <li>Appstore for Andriod <i class="fas fa-chevron-right"></i> </li>
+                    </ul>
+                </div>
+                <!-- ================digital_content end================ -->
+
+                <hr class="hr">
+
+                <!-- ====================Helps & supports================ -->
+
+                <div class="help_supports">
+                    <h2>Help & Settings</h2>
+                    <ul>
+                        <li>Your Account</li>
+                        <li class="language">
+                            <i class="fas fa-globe"></i>
+                            English
+                        </li>
+                        <li>
+                            <img src="./images/india_flag.jpg" style="width:18px; height:12px; margin-right: 8px;"
+                                alt="india_flag">
+                            India
+                        </li>
+                        <li>Customer Service</li>
+                        <li id="userClicks">
+                            <a style="color:#111;" href="./CreateSignPage.html">
+                                Create account
+                            </a>
+                        </li>
+                        <li id="UserIsThere">
+                            <a style="color:#111;" href="./SignPage.html">
+                                Sign In
+                            </a>
+                        </li>
+                        <li class="SignOut" id="SignOut"></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ========================sidebars-section End====================== -->
+
+<!-- Overlay -->
+<div id="overlay"></div>
+<div id="overlayTwo"></div>
+<!-- Overlay end -->
+
+<!-- ======================Alert view============================= -->
+<div id="errors_container">
+    <div id="errors_signout">
+        <div class="error_content">
+            <div class="top_icons">
+                <i id="top_cancle" class="fas fa-times-circle"></i>
+            </div>
+
+            <div class="icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="title">
+                !error
+            </div>
+
+            <div class="description">
+                <p>
+                    Its a AmazonClone your Data was earse not store anywhere after you signout you should Recreate
+                    your
+                    account.
+                    <br> Thanks for Using <a href="#"> AmazonClone.com </a>
+                </p>
+            </div>
+
+            <div class="dismiss-btn">
+                <button id="dismiss" class="dismiss">
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======================Alert view end========================= -->
+
+<!-- ================script section============== -->
+<script src="./JS/main.js"></script>
+<script src="./JS/cart.js"></script>
+<script src="./JS/cartMain.js"></script>
+
+<body>
+
+</body>
+
+</html>

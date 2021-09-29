@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nilesh_Rathod">
+    <meta name="description" content="AmazonClone for practice purpose to create a E-commerce websites">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logoimg2.png" type="image/png">
+    <title>AmazonClone Sign in</title>
+    <!-- ==========Style Link========== -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/MediaQueries.css">
+    <!-- =======Font Awesome Links====== -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- ==============Google Fonts============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="sign_container">
+        <div class="top_logo">
+            <a href="./index.html">
+                <div id="sign_image">
+                    <img src="./images/logoClone.png" alt="logoClone-img">
+                </div>
+            </a>
+        </div>
+        <div class="sign_bottom">
+            <div class="sign_account">
+                <div class="signIn_content">
+                    <div class="sign_heading">
+                        <h1>Sign-In</h1>
+                    </div>
+                    <div class="signIn_bottom_content">
+                        <form class="signIn_content">
+                            <!-- action="./index.html" -->
+                            <div class="input_contents email_input">
+                                <label>Email or mobile phone number</label>
+                                <input class="EmailMobile" type="text" placeholder="Email or Mobile Number">
+                            </div>
+                            <div style="margin-bottom: 5px;" class="input_contents password_input">
+                                <label>Password</label>
+                                <input class="password" type="password" placeholder="Enter Your Password">
+                            </div>
+                            <div class="forget_paswd">
+                                <a href="#">
+                                    <span>Forgot Password?</span>
+                                </a>
+                            </div>
+                            <div class="signing_button">
+                                <button id="showData" type="button">Continue</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_create_acc">
+            <span>New to AmazonClone?</span> <br>
+            <button>Create your AmazonClone account</button>
+        </div>
+    </div>
+    <div class="hr hr_2"></div>
+    <div class="sign_footer">
+        <a class="link_to_site" href="./index.html">
+            <span>AmazonClone.in</span>
+        </a>
+        <br>
+        <span>&COPY; 2021, AmazonClone.com, Inc. or its a Clone</span>
+    </div>
+
+    <script>
+        let go_to_create_acc = document.querySelector('.go_to_create_acc button');
+
+        go_to_create_acc.addEventListener('click', () => {
+            window.location = './CreateSignPage.html';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#131921" />
+    <meta name="author" content="Nilesh_Rathod">
+    <meta name="description" content="AmazonClone for practice purpose to create a E-commerce websites">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logoimg2.png" type="image/png">
+    <title>AmazonClone.com. Spend less. Smile more.</title>
+    <!-- ===========Style Links============ -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/MediaQueries.css">
+
+    <!-- =======Font Awesome Links====== -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="payment_page_container">
+        <div class="payment_container">
+            <div class="top_logo">
+                <a href="./index.html">
+                    <div id="sign_image">
+                        <img src="./images/logoClone.png" alt="logoClone-img">
+                    </div>
+                </a>
+            </div>
+
+            <div class="payment_wrapper">
+                <div class="heading_pay">
+                    <h1>Shipping to: <span id="username"></span> </h1>
+                </div>
+                <div class="payment_bottom">
+                    <form class="payment_content">
+                        <!-- action="./index.html" -->
+                        <div class="input_wrapper">
+                            <div class="input_contents name_input">
+                                <label>Your name</label>
+                                <input disabled="disabled" id="payment_name" type="text">
+                            </div>
+                            <div class="input_contents number_input">
+                                <label>Mobile number</label>
+                                <input disabled="disabled" id="payment_number" type="text">
+                            </div>
+                        </div>
+                        <div class="input_wrapper">
+                            <div class="input_contents email_input">
+                                <label>Email Address</label>
+                                <input disabled="disabled" id="payment_email" type="email">
+                            </div>
+                            <div class="input_contents card_number_input">
+                                <label>Card number</label>
+                                <input autocomplete="off" id="card_number" type="tel" placeholder="xxxx xxxx xxxx 0000"
+                                    maxlength="16">
+                                <span id="card_error">!Please enter your card number</span>
+                                <span id="card_error3">!Your Card Number invalid</span>
+                            </div>
+                        </div>
+
+                        <div class="input_wrapper">
+                            <div class="input_contents email_input">
+                                <label>Expiration Date</label>
+                                <input autocomplete="off" id="payment_expire" type="tel" placeholder="04/28"
+                                    maxlength="5">
+                                <span id="card_exiper_error">!Your Expiration Number invalid</span>
+                            </div>
+                            <div class="input_contents card_number_input">
+                                <label>CVV</label>
+                                <input autocomplete="off" id="payment_cvv" type="tel" placeholder="123" maxlength="3">
+                                <span id="card_cvv_error">!Your CVV invalid</span>
+                            </div>
+                        </div>
+
+                        <div class="hr-2"></div>
+
+                        <div class="bottom_payment_wrapper">
+                            <div class="bottom_checkout">
+                                <h2>Order Total: <span id="price_order"> </span></h2>
+
+                                <a href="./CartPage.html">
+                                    <span>
+                                        Cancel process
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="payment_button">
+                                <button type="submit" id="payment_Btn">Place Your
+                                    order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================Success Popup==================== -->
+        <div class="popup_container">
+            <div class="popup center">
+                <div class="icon">
+                    <i class="fa fa-check"></i>
+                </div>
+                <div class="title">
+                    Order Successfull!!
+                </div>
+
+                <div class="description">
+                    <p>
+                        Your order was place you will redirect to AmazonClone.com
+                    </p>
+                </div>
+
+                <div class="dismiss-btn">
+                    <button class="dismiss">
+                        Done
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlays_payment"></div>
+
+
+    <!-- ============JS Script============= -->
+    <script src="./JS/PaymentPage.js"></script>
+</body>
+
+</html>
