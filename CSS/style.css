@@ -3132,6 +3132,9 @@ footer .main_footer .bottom_footer span:not(:last-child) {
 #errors_signout .error_content .dismiss-btn {
   margin-top: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #errors_signout .error_content .dismiss-btn .dismiss {
