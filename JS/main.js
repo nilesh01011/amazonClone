@@ -133,13 +133,20 @@ if (GetUserName == null) {
 let UserSignOutErrors = document.querySelector('#errors_container'),
   SignOutErrors = document.querySelector('#errors_signout'),
   top_cancle = document.querySelector('#top_cancle'),
-  dismiss = document.querySelector('#dismiss');
+  dismiss = document.querySelector('#dismiss'),
+  bottom_cancle = document.querySelector('#bottom_cancle');
+
 
 for (let i = 0; i < SignOut.length; i++) {
   SignOut[i].addEventListener('click', () => {
     UserSignOutErrors.style.display = 'block';
     SignOutErrors.classList.add('active');
     top_cancle.addEventListener('click', () => {
+      SignOutErrors.classList.remove('active');
+      UserSignOutErrors.style.display = 'none';
+    });
+    
+     bottom_cancle.addEventListener('click', () => {
       SignOutErrors.classList.remove('active');
       UserSignOutErrors.style.display = 'none';
     });
@@ -160,6 +167,11 @@ function SignOutFooter() {
     SignOutErrors.classList.remove('active');
     UserSignOutErrors.style.display = 'none';
   });
+  
+   bottom_cancle.addEventListener('click', () => {
+      SignOutErrors.classList.remove('active');
+      UserSignOutErrors.style.display = 'none';
+    });
 
   dismiss.addEventListener('click', () => {
     SignOutErrors.classList.remove('active');
