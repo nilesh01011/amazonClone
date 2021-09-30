@@ -3129,6 +3129,13 @@ footer .main_footer .bottom_footer span:not(:last-child) {
   color: #e74c3c;
 }
 
+#bottom_cancle {
+  color: #111;
+  cursor: pointer;
+  margin-right: 40px;
+  letter-spacing: 1px;
+}
+
 #errors_signout .error_content .dismiss-btn {
   margin-top: 10px;
   text-align: center;
