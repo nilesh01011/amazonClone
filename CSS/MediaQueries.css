@@ -67,7 +67,6 @@
     text-align: left;
   }
   #cart_page .container_wrapper.cart .right_cart_section button.buyBtn {
-    height: 40px;
     font-size: 15px;
     width: 270px;
   }
@@ -790,7 +789,6 @@
   }
 
   #cart_page .container_wrapper.cart .right_cart_section button.buyBtn {
-    height: 35px;
     margin: 14px 0;
   }
 
