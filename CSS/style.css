@@ -2843,7 +2843,7 @@ footer .main_footer .bottom_footer span:not(:last-child) {
 }
 
 #username {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .payment_wrapper .input_wrapper {
