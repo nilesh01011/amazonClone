@@ -5,7 +5,12 @@ var overlayOne = document.getElementById('overlay'),
   Sidebar = document.getElementById('sidebar'),
   SidebarLeft = document.getElementById('sidebars_left'),
   CrossSign = document.querySelector('#sideBars_nav .close_sidebar'),
-  sign_lists = document.getElementById('sign_lists');
+  sign_lists = document.getElementById('sign_lists'),
+  SideBarHeader = document.querySelector('.sidebar_header');
+
+SideBarHeader.addEventListener('click', () => {
+  window.location = './SignPage.html';
+});
 
 function mouseOver() {
   sign_lists.style.display = 'block';
