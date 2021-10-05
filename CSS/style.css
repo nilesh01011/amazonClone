@@ -1976,10 +1976,14 @@ main .first_products .Four_products .Top_Site .create_accou a {
   text-decoration: underline;
 }
 
+main .first_products .Four_products .Bottom_Site {
+  background: #fff;
+}
+
 main .first_products .Four_products .Bottom_Site img {
   width: 100%;
   height: 100%;
-  background-size: cover;
+   object-fit: contain;
 }
 
 main .first_products .Five_products {
