@@ -373,3 +373,99 @@ function BackToHomePage() {
   GamingMerchPage.classList.remove('is_active');
   AnimalToyPage.classList.remove('is_active');
 }
+// =========================================================
+// =========================================================
+let SidebarLeft2 = document.querySelector('#sidebars_left'),
+  overlayTwo2 = document.getElementById('overlayTwo'),
+  sideBar_HomeExplBtn = document.querySelector('#sideBar_HomeExplBtn'),
+  sideBar_amazonBasicsBtn = document.querySelector('#sideBar_amazonBasicsBtn'),
+  sideBar_ComputPartBtn = document.querySelector('#sideBar_ComputPartBtn'),
+  sideBar_shopCategoryBtn = document.querySelector('#sideBar_shopCategoryBtn');
+
+sideBar_amazonBasicsBtn.addEventListener('click', () => {
+  amazonBasicsPage.classList.add('is_active');
+  SidebarLeft2.style.left = '-150%';
+  SidebarLeft2.style.transition = 'all 0.5s ease-in-out';
+  overlayTwo2.style.left = '-150%';
+  home_page.classList.remove('is_active');
+  fitAtPage.classList.remove('is_active');
+  shopCategoryPage.classList.remove('is_active');
+  ComputPartPage.classList.remove('is_active');
+  oculusPage.classList.remove('is_active');
+  GamingAccPage.classList.remove('is_active');
+  FindTvPage.classList.remove('is_active');
+  TopBeautyPage.classList.remove('is_active');
+  FavToysPage.classList.remove('is_active');
+  LaptopTablePage.classList.remove('is_active');
+  ComfyPage.classList.remove('is_active');
+  HomeExplPage.classList.remove('is_active');
+  GamingMerchPage.classList.remove('is_active');
+  AnimalToyPage.classList.remove('is_active');
+});
+
+sideBar_ComputPartBtn.addEventListener('click', () => {
+  ComputPartPage.classList.add('is_active');
+  SidebarLeft2.style.left = '-150%';
+  SidebarLeft2.style.transition = 'all 0.5s ease-in-out';
+  overlayTwo2.style.left = '-150%';
+
+  home_page.classList.remove('is_active');
+  fitAtPage.classList.remove('is_active');
+  shopCategoryPage.classList.remove('is_active');
+  amazonBasicsPage.classList.remove('is_active');
+  oculusPage.classList.remove('is_active');
+  GamingAccPage.classList.remove('is_active');
+  FindTvPage.classList.remove('is_active');
+  TopBeautyPage.classList.remove('is_active');
+  FavToysPage.classList.remove('is_active');
+  LaptopTablePage.classList.remove('is_active');
+  ComfyPage.classList.remove('is_active');
+  HomeExplPage.classList.remove('is_active');
+  GamingMerchPage.classList.remove('is_active');
+  AnimalToyPage.classList.remove('is_active');
+});
+
+sideBar_HomeExplBtn.addEventListener('click', () => {
+  HomeExplPage.classList.add('is_active');
+
+  SidebarLeft2.style.left = '-150%';
+  SidebarLeft2.style.transition = 'all 0.5s ease-in-out';
+  overlayTwo2.style.left = '-150%';
+
+  home_page.classList.remove('is_active');
+  fitAtPage.classList.remove('is_active');
+  shopCategoryPage.classList.remove('is_active');
+  amazonBasicsPage.classList.remove('is_active');
+  oculusPage.classList.remove('is_active');
+  GamingAccPage.classList.remove('is_active');
+  FindTvPage.classList.remove('is_active');
+  TopBeautyPage.classList.remove('is_active');
+  FavToysPage.classList.remove('is_active');
+  LaptopTablePage.classList.remove('is_active');
+  ComfyPage.classList.remove('is_active');
+  ComputPartPage.classList.remove('is_active');
+  GamingMerchPage.classList.remove('is_active');
+  AnimalToyPage.classList.remove('is_active');
+});
+
+sideBar_shopCategoryBtn.addEventListener('click', () => {
+  shopCategoryPage.classList.add('is_active');
+
+  amazonBasicsPage.classList.remove('is_active');
+  SidebarLeft2.style.left = '-150%';
+  SidebarLeft2.style.transition = 'all 0.5s ease-in-out';
+  overlayTwo2.style.left = '-150%';
+  home_page.classList.remove('is_active');
+  fitAtPage.classList.remove('is_active');
+  ComputPartPage.classList.remove('is_active');
+  oculusPage.classList.remove('is_active');
+  GamingAccPage.classList.remove('is_active');
+  FindTvPage.classList.remove('is_active');
+  TopBeautyPage.classList.remove('is_active');
+  FavToysPage.classList.remove('is_active');
+  LaptopTablePage.classList.remove('is_active');
+  ComfyPage.classList.remove('is_active');
+  HomeExplPage.classList.remove('is_active');
+  GamingMerchPage.classList.remove('is_active');
+  AnimalToyPage.classList.remove('is_active');
+});
