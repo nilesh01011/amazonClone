@@ -1432,6 +1432,7 @@ header .AmazonRespons {
   display: flex;
   align-items: center;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 #sideBars_nav .sidebar_contents .sidebar_header i.fas {
