@@ -991,6 +991,7 @@
     justify-content: center;
     padding: 5px 0;
     outline: 1px solid #eee;
+    cursor: pointer;
   }
   main .mobile_view_third_products .third_contents .content_wrapper img,
   main .mobile_view_fourth_products .content .content_wrapper img {
