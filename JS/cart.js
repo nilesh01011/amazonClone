@@ -864,6 +864,6 @@ function manageQuantity() {
 OnLoadCartNumbers();
 displayCart();
 
-function BackToHome() {
-  window.location = './index.html';
+function GoToSingUp() {
+  window.location = './CreateSignPage.html';
 }
