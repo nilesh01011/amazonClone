@@ -51,7 +51,7 @@ function Empty_Cart() {
           <a href="./index.html">Shop today’s deals</a> 
         </h2>
         <div class="btn">
-            <button onclick="BackToHome()" type="button">Continue shopping</button>
+            <button onclick="GoToSingUp()" type="button">Sign in to your account</button>
         </div>
       </div>
     </div>
