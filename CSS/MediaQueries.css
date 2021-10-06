@@ -756,6 +756,10 @@
     margin-left: 0;
     margin-top: 0;
   }
+  
+  #cart_page .cart_section .empty_cart_image .right_side_cart {
+    width: 100%;
+  }
 
   .cart_section .Subtotal_price,
   #cart_container .heading_section {
