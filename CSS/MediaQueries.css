@@ -805,7 +805,7 @@
     order: 1;
     padding-bottom: 0;
     box-shadow: 0 2px 5px 0 rgba(213 217 217 / 50%);
-    grid-gap: 5px !important;
+    grid-gap: 10px !important;
   }
 
   main .first_products::-webkit-scrollbar {
