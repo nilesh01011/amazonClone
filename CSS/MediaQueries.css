@@ -68,7 +68,6 @@
   }
   #cart_page .container_wrapper.cart .right_cart_section button.buyBtn {
     font-size: 15px;
-    width: 270px;
   }
 }
 
@@ -1227,6 +1226,14 @@
 
   #mobile_site span i.fas {
     display: block;
+  }
+  
+  .container .inspireAmazon {
+    padding: 10px 20px 10px 20px;
+  }
+  
+  .container .inspireAmazon button {
+    width: 100%;
   }
 
   footer .footer_content {
