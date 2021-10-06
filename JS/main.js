@@ -79,7 +79,7 @@ if (GetUserName == null) {
     inspireAmazon[ins].innerHTML = `
   <h2>Inspired by your browsing history</h2>
   <button>
-  <a href="./CreateSignPage.html">Sign in to see personalized recommendations</a>
+   <a href="./index.html">Continue shopping</a>
   </button>
   `;
   }
