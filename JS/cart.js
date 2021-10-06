@@ -657,7 +657,7 @@ let IDProducts = products.filter((findId) => {
 
 for (let i = 0; i < carts.length; i++) {
   carts[i].addEventListener('click', () => {
-    button[i].style.cssText = 'background:#70e000; border: 2px solid #38b000;';
+       button[i].style.background = '#70e000';
     TextChange[i].innerHTML = 'Added';
     Icons[i].classList.remove('fa-shopping-cart');
     Icons[i].classList.add('fa-check');
