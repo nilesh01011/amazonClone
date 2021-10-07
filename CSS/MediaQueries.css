@@ -492,6 +492,11 @@
   .Sign_container .sign_content .heading h1 {
     font-size: 20px;
   }
+  
+  .sign_container,
+  .Create_Sign_container {
+    width: 350px;
+  }
 
   #cart_page .cart_section .product .product_content_bottom_content {
     width: 100%;
