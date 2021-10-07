@@ -1211,7 +1211,7 @@
     .seven_four_products
     img {
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     cursor: pointer;
   }
 
