@@ -1318,6 +1318,6 @@
   main .first_products .Five_products,
   main .first_products .Six_products,
   main .five_products .five_one {
-    grid-template-rows: max-content;
+     grid-template-rows: 30px auto 30px !important;
   }
 }
