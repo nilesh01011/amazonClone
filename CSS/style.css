@@ -1327,11 +1327,11 @@ header .AmazonRespons {
   width: auto;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 12ch;
 }
 
 #carousel_lists .items {
-  width: 100%;
+  width: max-content;
+  margin-right: 20px;
   height: 100%;
   max-height: 20px;
   color: #ffffff;
