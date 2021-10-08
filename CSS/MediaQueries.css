@@ -1318,6 +1318,6 @@
   main .first_products .Five_products,
   main .first_products .Six_products,
   main .five_products .five_one {
-     height: 420px;
+     height: 420px !important;
   }
 }
