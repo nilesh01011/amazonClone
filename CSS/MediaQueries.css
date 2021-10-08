@@ -407,6 +407,12 @@
     font-size: 18px;
     font-weight: 400;
   }
+  
+  #cart .Count_logo span {
+    padding-bottom: 0 !important;
+    padding-top: 3px;
+  }
+  
   .payment_page_container .payment_container {
     width: 100%;
   }
