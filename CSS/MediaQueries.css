@@ -762,6 +762,7 @@
     margin-top: 0;
   }
   
+  #SignOutUser,
   #cart_page .cart_section .empty_cart_image .right_side_cart {
     width: 100%;
   }
