@@ -50,6 +50,10 @@
   main .amazon_header h3 {
     font-size: 13px;
   }
+  
+  .container main .first_products .Four_products .Top_Site button {
+    height: 40px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
