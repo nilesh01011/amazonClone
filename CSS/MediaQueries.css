@@ -1311,13 +1311,3 @@
     width: 300px;
   }
 }
-
-@media only screen and (min-width: 360px) and (max-width: 640px) {
-  main .first_products .One_products,
-  main .first_products .Three_products,
-  main .first_products .Five_products,
-  main .first_products .Six_products,
-  main .five_products .five_one {
-     height: 420px !important;
-  }
-}
