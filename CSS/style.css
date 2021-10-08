@@ -2776,6 +2776,7 @@ footer .main_footer .bottom_footer span:not(:last-child) {
 
 .sign_container .go_to_create_acc button {
   width: 100%;
+  height: 40px;
   margin-top: 13px;
   padding: 8px 11px;
   background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
