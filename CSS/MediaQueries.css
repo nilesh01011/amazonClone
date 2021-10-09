@@ -459,7 +459,7 @@
   #amazonBasics,
   #shopCategory,
   #fitAthome {
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
   }
 
   #cart_container .product_content p {
@@ -707,6 +707,36 @@
 }
 
 @media only screen and (max-width: 576px) {
+  #AnimalToyPage .container_wrapper.AnimalToy,
+  #GamingMerchPage .container_wrapper.GamingMerch,
+  #HomeExplPage .container_wrapper.HomeExpl,
+  #ComfyPage .container_wrapper.Comfy,
+  #LaptopTablePage .container_wrapper.LaptopTable,
+  #FavToysPage .container_wrapper.FavToys,
+  #TopBeautyPage .container_wrapper.TopBeauty,
+  #ComputPartPage .container_wrapper.ComputPart,
+  #oculusPage .container_wrapper.oculusPro,
+  #amazonBasics .container_wrapper.amazonBasics {
+    gap: 15px;
+  }
+
+  #AnimalToyPage .AnimalToy_section,
+  #GamingMerchPage .GamingMerch_section,
+  #HomeExplPage .HomeExpl_section,
+  #ComfyPage .Comfy_section,
+  #LaptopTablePage .LaptopTable_section,
+  #FavToysPage .FavToys_section,
+  #TopBeautyPage .TopBeauty_section,
+  #FindTvPage .FindTvPage_section,
+  #GamingAccPage .GamingAcc_section,
+  #ComputPartPage .ComputPart_section,
+  #oculusPage .oculusPro_section,
+  #amazonBasics .amazonBasics_section,
+  #shopCategory .shopCategory_section,
+  #fitAthome .fitAthome_section {
+    gap: 10px;
+  }
+  
   #ComputPartBtn h2,
   main .mobile_view_third_products h2,
   main .mobile_view_fourth_products h2,
