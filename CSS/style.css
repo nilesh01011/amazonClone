@@ -1291,7 +1291,7 @@ header .AmazonRespons:hover {
 }
 
 header .AmazonRespons {
-  width: 80%;
+  width: max-content;
   margin-left: auto;
   padding: 6px 0;
   font-size: 12px;
