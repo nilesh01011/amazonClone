@@ -43,7 +43,7 @@ function Empty_Cart() {
     productContainer.innerHTML = `
     <div class="empty_cart_image">
       <div class="image">
-        <img src="./images/empty_cart.jpg" alt="empty_cart_images" />
+        <img src="./images/Vision.svg" alt="empty_cart_images" />
       </div>
       <div class="right_side_cart">
         <h2>
