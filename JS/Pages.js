@@ -380,7 +380,10 @@ let SidebarLeft2 = document.querySelector('#sidebars_left'),
   sideBar_HomeExplBtn = document.querySelector('#sideBar_HomeExplBtn'),
   sideBar_amazonBasicsBtn = document.querySelector('#sideBar_amazonBasicsBtn'),
   sideBar_ComputPartBtn = document.querySelector('#sideBar_ComputPartBtn'),
-  sideBar_shopCategoryBtn = document.querySelector('#sideBar_shopCategoryBtn');
+  sideBar_shopCategoryBtn = document.querySelector('#sideBar_shopCategoryBtn'),
+  sideBar_GamingAccBtn = document.querySelector('#SideBar_GamingAccBtn'),
+  sideBar_LaptopTableBtn = document.querySelector('#SideBar_LaptopTableBtn'),
+  sideBar_oculusBtn = document.getElementById('SideBar_OculusBtn');
 
 sideBar_amazonBasicsBtn.addEventListener('click', () => {
   amazonBasicsPage.classList.add('is_active');
@@ -459,6 +462,72 @@ sideBar_shopCategoryBtn.addEventListener('click', () => {
   fitAtPage.classList.remove('is_active');
   ComputPartPage.classList.remove('is_active');
   oculusPage.classList.remove('is_active');
+  GamingAccPage.classList.remove('is_active');
+  FindTvPage.classList.remove('is_active');
+  TopBeautyPage.classList.remove('is_active');
+  FavToysPage.classList.remove('is_active');
+  LaptopTablePage.classList.remove('is_active');
+  ComfyPage.classList.remove('is_active');
+  HomeExplPage.classList.remove('is_active');
+  GamingMerchPage.classList.remove('is_active');
+  AnimalToyPage.classList.remove('is_active');
+});
+
+sideBar_GamingAccBtn.addEventListener('click', () => {
+  GamingAccPage.classList.add('is_active');
+
+  oculusPage.classList.remove('is_active');
+  shopCategoryPage.classList.remove('is_active');
+  amazonBasicsPage.classList.remove('is_active');
+  SidebarLeft2.style.left = '-150%';
+  SidebarLeft2.style.transition = 'all 0.5s ease-in-out';
+  overlayTwo2.style.left = '-150%';
+  home_page.classList.remove('is_active');
+  fitAtPage.classList.remove('is_active');
+  ComputPartPage.classList.remove('is_active');
+  FindTvPage.classList.remove('is_active');
+  TopBeautyPage.classList.remove('is_active');
+  FavToysPage.classList.remove('is_active');
+  LaptopTablePage.classList.remove('is_active');
+  ComfyPage.classList.remove('is_active');
+  HomeExplPage.classList.remove('is_active');
+  GamingMerchPage.classList.remove('is_active');
+  AnimalToyPage.classList.remove('is_active');
+});
+
+sideBar_LaptopTableBtn.addEventListener('click', () => {
+  LaptopTablePage.classList.add('is_active');
+
+  oculusPage.classList.remove('is_active');
+  shopCategoryPage.classList.remove('is_active');
+  amazonBasicsPage.classList.remove('is_active');
+  SidebarLeft2.style.left = '-150%';
+  SidebarLeft2.style.transition = 'all 0.5s ease-in-out';
+  overlayTwo2.style.left = '-150%';
+  home_page.classList.remove('is_active');
+  fitAtPage.classList.remove('is_active');
+  ComputPartPage.classList.remove('is_active');
+  GamingAccPage.classList.remove('is_active');
+  FindTvPage.classList.remove('is_active');
+  TopBeautyPage.classList.remove('is_active');
+  FavToysPage.classList.remove('is_active');
+  ComfyPage.classList.remove('is_active');
+  HomeExplPage.classList.remove('is_active');
+  GamingMerchPage.classList.remove('is_active');
+  AnimalToyPage.classList.remove('is_active');
+});
+
+sideBar_oculusBtn.addEventListener('click', () => {
+  oculusPage.classList.add('is_active');
+
+  shopCategoryPage.classList.remove('is_active');
+  amazonBasicsPage.classList.remove('is_active');
+  SidebarLeft2.style.left = '-150%';
+  SidebarLeft2.style.transition = 'all 0.5s ease-in-out';
+  overlayTwo2.style.left = '-150%';
+  home_page.classList.remove('is_active');
+  fitAtPage.classList.remove('is_active');
+  ComputPartPage.classList.remove('is_active');
   GamingAccPage.classList.remove('is_active');
   FindTvPage.classList.remove('is_active');
   TopBeautyPage.classList.remove('is_active');
