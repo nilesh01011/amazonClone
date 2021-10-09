@@ -180,9 +180,6 @@
   #product_heading p {
     font-size: 16px !important;
   }
-  .container main .first_products .Four_products .Top_Site h2.UserSignIt {
-    margin-bottom: 40px;
-  }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
@@ -684,10 +681,6 @@
   main .first_products .Four_products .Top_Site h2 {
     font-weight: 700;
     text-transform: capitalize;
-  }
-
-  .container main .first_products .Four_products .Top_Site h2.UserSignIt {
-    margin-bottom: 120px;
   }
 
   main .first_products .Three_products {
