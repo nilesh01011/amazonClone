@@ -1324,20 +1324,23 @@ header .AmazonRespons {
 }
 
 #carousel_lists .wrapper {
-  width: auto;
-  display: grid;
-  grid-auto-flow: column;
+  width: fit-content;
+  display: flex;
+  flex-shrink: 0;
 }
 
 #carousel_lists .items {
   width: max-content;
-  margin-right: 20px;
   height: 100%;
   max-height: 20px;
   color: #ffffff;
   text-align: center;
   box-sizing: content-box;
   cursor: pointer;
+}
+
+#carousel_lists .items:not(:last-child) {
+  margin-right: 20px;
 }
 
 #carousel_lists .items:hover {
