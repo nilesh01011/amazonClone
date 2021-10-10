@@ -748,6 +748,7 @@
   
   .container {
     grid-template-rows: auto;
+    -webkit-grid-template-rows: auto;
   }
 
   #home .container_wrapper.home {
