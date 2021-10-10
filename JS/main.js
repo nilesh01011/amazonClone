@@ -588,6 +588,5 @@ SearchBtn.addEventListener('click', () => {
     ComfyPage.classList.remove('is_active');
   } else {
     console.log('not show in product list');
-    window.location = './index.html';
   }
 });
