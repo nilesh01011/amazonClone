@@ -225,7 +225,7 @@
 
   header {
     grid-template-columns: 0.1fr repeat(3, 1fr);
-    grid-template-rows: repeat(2, 0.5fr) repeat(2, 0.4fr);
+    grid-template-rows: 0.5fr auto repeat(2, 0.4fr);
     user-select: none;
     pointer-events: all;
     padding: 0;
@@ -306,6 +306,7 @@
     z-index: 5;
     display: block;
     background: #131921;
+    margin-top: 5px;
   }
 
   header .input_content {
