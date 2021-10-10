@@ -235,6 +235,7 @@ SearchBtn.addEventListener('click', () => {
   } else if (
     Input_Search.value == 'gym part' ||
     Input_Search.value == 'gym' ||
+    Input_Search.value == 'Gym' ||
     Input_Search.value == 'gym product' ||
     Input_Search.value == 'fit at home' ||
     Input_Search.value == 'resistance band' ||
