@@ -753,6 +753,7 @@
 
   #home .container_wrapper.home {
     grid-template-rows: 290px auto;
+    -webkit-grid-template-rows: 290px auto;
   }
 
   #home .container_wrapper.home main {
