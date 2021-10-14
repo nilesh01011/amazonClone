@@ -70,7 +70,14 @@ payment_Btn.addEventListener('click', (e) => {
     payment_cvv.style.border = '1px solid red';
     payment_expire.style.border = '1px solid red';
     card_number.focus();
-  } else if (card_number.value == 0 && payment_cvv.value == 0) {
+  } else if (card_number.value.length < 16) {
+    card_error.style.display = 'block';
+    card_exiper_error.style.display = 'none';
+    card_cvv_error.style.display = 'none';
+    card_number.style.border = '1px solid red';
+    card_number.focus();
+  }
+  else if (card_number.value == 0 && payment_cvv.value == 0) {
     card_error.style.display = 'block';
     card_exiper_error.style.display = 'none';
     card_cvv_error.style.display = 'block';
