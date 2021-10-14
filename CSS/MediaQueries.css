@@ -215,22 +215,7 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  h2 {
-    font-size: 16px;
-  }
-
-  .container {
-    grid-template-rows: auto auto 130px 545px;
-  }
-
-  header {
-    grid-template-columns: 0.1fr repeat(3, 1fr);
-    grid-template-rows: 0.5fr auto repeat(2, 0.4fr);
-    user-select: none;
-    pointer-events: all;
-    padding: 0;
-  }
-
+ 
   header::before {
     display: none;
   }
@@ -344,22 +329,6 @@
     display: none !important;
   }
 
-  main .amazon_header h3 {
-    font-size: 9.4px !important;
-  }
-
-  main .five_products {
-    grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-rows: repeat(2, 420px) !important;
-    grid-gap: 10px !important;
-  }
-
-  main .first_products {
-    grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-rows: repeat(4, 420px) !important;
-    grid-gap: 10px !important;
-  }
-
   main .first_products .One_products {
     order: 2;
   }
@@ -395,6 +364,22 @@
 }
 
 @media only screen and (max-width: 768px) {
+   h2 {
+    font-size: 16px;
+  }
+
+  .container {
+    grid-template-rows: auto auto 130px 545px;
+  }
+
+  header {
+    grid-template-columns: 0.1fr repeat(3, 1fr);
+    grid-template-rows: 0.5fr auto repeat(2, 0.4fr);
+    user-select: none;
+    pointer-events: all;
+    padding: 0;
+  }
+/* ======================================================== */
   #cart .Count_logo span {
     margin-top: 0 !important;
   }
@@ -402,6 +387,26 @@
   .first_products {
     grid-template-rows: repeat(4, 420px);
   }
+  
+  /* ============================================= */
+
+  main .amazon_header h3 {
+    font-size: 9.4px !important;
+  }
+
+  main .five_products {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 420px) !important;
+    grid-gap: 10px !important;
+  }
+
+  main .first_products {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(4, 420px) !important;
+    grid-gap: 10px !important;
+  }
+
+  /* ============================================= */
 
   footer .footer_content ul {
     width: 85%;
