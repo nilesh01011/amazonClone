@@ -66,7 +66,7 @@
   }
   #home main .first_products {
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-rows: repeat(3, 420px);
+    grid-template-rows: repeat(3, 1fr);
   }
   #cart_page .container_wrapper.cart .right_cart_section {
     text-align: center;
