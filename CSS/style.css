@@ -1796,7 +1796,7 @@ main .mobile_view_second_products {
 .container main .first_products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 420px);
   grid-gap: 20px;
 }
 
