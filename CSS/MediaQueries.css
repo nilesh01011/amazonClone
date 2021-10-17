@@ -390,10 +390,6 @@
   
   /* ============================================= */
 
-  main .amazon_header h3 {
-    font-size: 9.4px !important;
-  }
-
   main .five_products {
     grid-template-columns: repeat(2, 1fr) !important;
     grid-template-rows: repeat(2, 420px) !important;
