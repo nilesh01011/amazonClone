@@ -106,7 +106,7 @@
 
   #home main .first_products {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 420px);
+    grid-template-rows: repeat(3, 1fr);
   }
 
   #home main .five_products,
@@ -142,7 +142,7 @@
 
   main .five_products {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 420px);
+    grid-template-rows: repeat(auto, 1fr);
     grid-row-gap: 20px;
   }
 
