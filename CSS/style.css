@@ -1900,7 +1900,7 @@ main .first_products .Nine_products .Nine_footer {
 
 .container main .first_products .Four_products {
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 143px 258px;
   grid-row-gap: 20px;
 }
 
