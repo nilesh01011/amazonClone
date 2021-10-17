@@ -383,22 +383,17 @@
   #cart .Count_logo span {
     margin-top: 0 !important;
   }
-
-  .first_products {
-    grid-template-rows: repeat(4, 420px);
-  }
   
   /* ============================================= */
 
   main .five_products {
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-rows: repeat(2, 420px) !important;
     grid-gap: 10px !important;
   }
 
   main .first_products {
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-rows: repeat(4, 420px) !important;
+    grid-template-rows: repeat(4, 1fr) !important;
     grid-gap: 10px !important;
   }
 
