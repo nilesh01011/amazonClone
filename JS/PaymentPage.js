@@ -131,9 +131,28 @@ payment_Btn.addEventListener('click', (e) => {
   }
 });
 
+let cartItems = localStorage.getItem('productsInCart');
+
+let cartItemsNumber = localStorage.getItem('totalCost');
+
+let cartTotal = localStorage.getItem('cartNumbers');
+
 dismiss.addEventListener('click', () => {
   popup.classList.remove('active');
   overlays_payment.style.display = 'none';
+  
+  cartItems = 0;
+
+  cartItemsNumber = 0;
+
+  cartTotal = 0;
+
+  localStorage.setItem('productsInCart', cartItems);
+
+  localStorage.setItem('totalCost', cartTotal);
+
+  localStorage.setItem('cartNumbers', cartItemsNumber);
+  
   setInterval(anim, 700);
 });
 
