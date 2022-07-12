@@ -765,7 +765,7 @@ function displayCart() {
             </div>
             </div>
             <div class="product_prices">
-              <span> &#8377;${item.inCart * item.price}.00 </span>
+              <span> &#8377;${new Intl.NumberFormat().format(item.inCart * item.price)}.00 </span>
              </div>
           </div>
           `;
@@ -774,14 +774,14 @@ function displayCart() {
     productContainer.innerHTML += `
         <div class="Subtotal_price">
           <div class="Subtotal_title">
-            <h4>Subtotal (${productsNumbers} item): <span class="font_400"> &#8377;${cartCost}.00 </span></h4>
+            <h4>Subtotal (${productsNumbers} item): <span class="font_400"> &#8377;${new Intl.NumberFormat().format(cartCost)}.00 </span></h4>
           </div>
         </div>
         `;
     SubTotalItems.innerHTML = `
         <div class="Subtotal_price">
           <div class="Subtotal_title">
-            <h4>Subtotal (${productsNumbers} item):<span class="font_400"> &#8377;${cartCost}.00 </span></h4>
+            <h4>Subtotal (${productsNumbers} item):<span class="font_400"> &#8377;${new Intl.NumberFormat().format(cartCost)}.00 </span></h4>
           </div>
         </div>
         `;
